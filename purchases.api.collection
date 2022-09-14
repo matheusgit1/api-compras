@@ -1,0 +1,1032 @@
+{
+	"info": {
+		"_postman_id": "6b4df7d7-51f9-47ae-b508-e7d91f301058",
+		"name": "compras (all ok)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17845763"
+	},
+	"item": [
+		{
+			"name": "wishlist (jwt) all ok",
+			"item": [
+				{
+					"name": "insert in wish list (jwt) (ok)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"caa9e1b8-7f5e-412a-b126-9bf31793e538\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/wishlist/insert",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"wishlist",
+								"insert"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "insert in wish list",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productId\":\"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL_API_COMPRAS}}/purchase/insert",
+									"host": [
+										"{{URL_API_COMPRAS}}"
+									],
+									"path": [
+										"purchase",
+										"insert"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 30 Aug 2022 14:38:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "remove from wish list (jwt) (ok)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/wishlist/remove",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"wishlist",
+								"remove"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "remove from wish list",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productId\":\"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL_API_COMPRAS}}/purchase/remove",
+									"host": [
+										"{{URL_API_COMPRAS}}"
+									],
+									"path": [
+										"purchase",
+										"remove"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 30 Aug 2022 14:48:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "list wish list (jwt) (ok)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/wishlist/list",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"wishlist",
+								"list"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL_API_COMPRAS}}/purchase/wishlist/list",
+									"host": [
+										"{{URL_API_COMPRAS}}"
+									],
+									"path": [
+										"purchase",
+										"wishlist",
+										"list"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-eFriGsUTRmhF61xXoQQxNKpUMaA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 04 Sep 2022 00:15:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "list wish list in detail (jwt) (ok)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/wishlist/details/0",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"wishlist",
+								"details",
+								"0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "list wish list in detail (jwt) (ok)",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{URL_API_COMPRAS}}/purchase/wishlist/details/0",
+									"host": [
+										"{{URL_API_COMPRAS}}"
+									],
+									"path": [
+										"purchase",
+										"wishlist",
+										"details",
+										"0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2413"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"96d-4I5DIVTANw0JY6LPkQluH9LOFLc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 06 Sep 2022 00:15:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"8f89e258-373c-4d34-87af-ae0f1f09ebe6\",\n        \"co_created_at\": \"2022-09-06T00:10:28.696Z\",\n        \"co_updated_at\": \"2022-09-06T00:10:28.696Z\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"10\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": [\n            {\n                \"title\": \"gerais\",\n                \"body\": {\n                    \"marca\": \"MAC\"\n                }\n            }\n        ],\n        \"co_is_product_active\": true,\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_product_stocks\": \"4\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\"\n    },\n    {\n        \"id\": \"f646a260-09db-464f-985e-615a36d4983a\",\n        \"co_created_at\": \"2022-09-06T00:10:53.300Z\",\n        \"co_updated_at\": \"2022-09-06T00:10:53.300Z\",\n        \"co_product_name\": \"Maleta De Maquiagem Profissional Grande Varias Cores Modelos\",\n        \"co_product_price\": \"197.3\",\n        \"co_product_description\": \"Maleta Profissional Grande\\nCom Maquiagem\\nMaleta + Maquiagem\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"10\",\n        \"co_product_images\": [\n            \"https://http2.mlstatic.com/D_NQ_NP_767723-MLB48862238150_012022-O.webp\",\n            \"https://http2.mlstatic.com/D_NQ_NP_673525-MLB49186875333_022022-O.webp\",\n            \"https://http2.mlstatic.com/D_NQ_NP_972443-MLB48874106874_012022-O.webp\",\n            \"https://http2.mlstatic.com/D_NQ_NP_668495-MLB48874134693_012022-O.webp\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"45\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": [\n            {\n                \"title\": \"Características principais\",\n                \"body\": {\n                    \"Marca\": \"Ruby Rose\",\n                    \"Modelo\": \"Ruby's 1153\"\n                }\n            }\n        ],\n        \"co_is_product_active\": true,\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_product_seller\": \"Joice Alves\",\n        \"co_product_stocks\": \"5\",\n        \"co_product_id\": \"caa9e1b8-7f5e-412a-b126-9bf31793e538\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "create purchase (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"cc4ea4a6-0de4-4d56-bb5e-b10b8c703cce\",\r\n    \"installments\": 5,\r\n    \"amount\": 1,\r\n    \"adressId\": \"453f861c-8d87-49e8-a07d-7a820d710f43\",\r\n    \"creditCard\": \"5400473428479038\",\r\n    \"mouth\": 3,\r\n    \"expYear\": 2028,\r\n    \"cvc\": 880\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/insert",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"insert"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create purchase (jwt)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\":\"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\r\n    \"installments\": 5,\r\n    \"amount\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/insert",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"insert"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Sep 2022 21:07:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "add to cart (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\r\n    \"quantity\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/cart/insert",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"cart",
+						"insert"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "add to cart (jwt)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\r\n    \"quantity\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/cart/insert",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"cart",
+								"insert"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Sep 2022 21:37:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "delete from cart (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/cart/remove",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"cart",
+						"remove"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete from cart (jwt)",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/cart/remove",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"cart",
+								"remove"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Sep 2022 01:45:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "list cart (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/cart/list",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"cart",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list cart (jwt) (ok)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/cart/list",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"cart",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "511"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1ff-aptNB4qnqeMzD7GY5Oi+bv2VkM0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Sep 2022 20:18:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"d040c410-fe28-442b-a948-f9459123003c\",\n        \"co_product_id\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_created_at\": \"2022-09-05T18:39:38.780Z\",\n        \"co_updated_at\": \"2022-09-05T18:39:38.780Z\",\n        \"co_quantity\": 4\n    },\n    {\n        \"id\": \"83cfeed6-d326-4859-a94f-2f125db9711b\",\n        \"co_product_id\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_created_at\": \"2022-09-05T18:46:34.788Z\",\n        \"co_updated_at\": \"2022-09-05T18:46:34.788Z\",\n        \"co_quantity\": 4\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "list cart in details (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/cart/details/0",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"cart",
+						"details",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list cart in details (jwt) (ok)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/cart/details/0",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"cart",
+								"details",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2269"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8dd-ynn9GVzgQLiVNZlsgDRHcdsVk28\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 05 Sep 2022 19:41:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"83cfeed6-d326-4859-a94f-2f125db9711b\",\n        \"co_created_at\": \"2022-09-05T18:46:34.788Z\",\n        \"co_updated_at\": \"2022-09-05T18:46:34.788Z\",\n        \"co_product_name\": \"PALETA DE SOMBRAS\",\n        \"co_product_price\": \"359\",\n        \"co_product_description\": \"maquiagem e paleta de sombras\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"10\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_SGF701_1x1_0.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_SGF701_1x1_1.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_SGF701_1x1_6.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"NUDE MODEL\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": [\n            {\n                \"title\": \"gerais\",\n                \"body\": {\n                    \"marca\": \"NUDE MODEL\"\n                }\n            }\n        ],\n        \"co_is_product_active\": true,\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_product_stocks\": \"5\",\n        \"co_product_id\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\n        \"co_quantity\": 4\n    },\n    {\n        \"id\": \"d040c410-fe28-442b-a948-f9459123003c\",\n        \"co_created_at\": \"2022-09-05T18:39:38.780Z\",\n        \"co_updated_at\": \"2022-09-05T18:39:38.780Z\",\n        \"co_product_name\": \"PALETA DE SOMBRAS\",\n        \"co_product_price\": \"359\",\n        \"co_product_description\": \"maquiagem e paleta de sombras\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"10\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_SGF701_1x1_0.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_SGF701_1x1_1.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_SGF701_1x1_6.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"NUDE MODEL\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": [\n            {\n                \"title\": \"gerais\",\n                \"body\": {\n                    \"marca\": \"NUDE MODEL\"\n                }\n            }\n        ],\n        \"co_is_product_active\": true,\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_product_stocks\": \"5\",\n        \"co_product_id\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\n        \"co_quantity\": 4\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "update cart (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\r\n    \"quantity\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/cart/patch",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"cart",
+						"patch"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update cart",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"98d58bbc-5dcd-43b5-83d6-c1c09cc23ff8\",\r\n    \"quantity\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/cart/patch",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"cart",
+								"patch"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Sep 2022 18:48:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "list purchase (jwt) (ok)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL_API_COMPRAS}}/purchase/list/4",
+					"host": [
+						"{{URL_API_COMPRAS}}"
+					],
+					"path": [
+						"purchase",
+						"list",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list purchase (jwt) (ok)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL_API_COMPRAS}}/purchase/list/0",
+							"host": [
+								"{{URL_API_COMPRAS}}"
+							],
+							"path": [
+								"purchase",
+								"list",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "11971"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2ec3-jhHPOKSfwL5JUnGAattJITBcugs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Sep 2022 02:54:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"e34c4f39-e757-48b6-94e5-8be4f989f485\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T18:51:00.364Z\",\n        \"co_updated_at\": \"2022-08-30T18:51:00.364Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"13881c70-dced-42ef-8283-afa0773b6faf\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T18:57:54.360Z\",\n        \"co_updated_at\": \"2022-08-30T18:57:54.360Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"25063642-e0b2-4d4e-b5ef-4bf53309ff94\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T18:59:22.644Z\",\n        \"co_updated_at\": \"2022-08-30T18:59:22.644Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"01d59fa0-7aa2-444c-9e43-095f6eb8da9f\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T19:00:39.594Z\",\n        \"co_updated_at\": \"2022-08-30T19:00:39.594Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"f602810b-4eec-41ea-b6b0-a40895e3c4fb\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T19:01:18.187Z\",\n        \"co_updated_at\": \"2022-08-30T19:01:18.187Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"3eb2420e-05d6-4828-99bc-f968f42bf751\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T19:02:10.506Z\",\n        \"co_updated_at\": \"2022-08-30T19:02:10.506Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"e1239321-015c-44e1-ba6a-199faa44fee8\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T19:02:15.660Z\",\n        \"co_updated_at\": \"2022-08-30T19:02:15.660Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"b2d9a23d-8dab-403b-bfbb-7e97a9dac48e\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T19:12:48.180Z\",\n        \"co_updated_at\": \"2022-08-30T19:12:48.180Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"a2957667-f9bb-4b87-86a5-222ca0fd88ef\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-08-30T22:00:44.685Z\",\n        \"co_updated_at\": \"2022-08-30T22:00:44.685Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    },\n    {\n        \"id\": \"9b8e7287-e294-4842-9f1d-9ba73ccb4189\",\n        \"co_product_name\": \"BASE FLUÍDA STUDIO FIX COM FPS 15\",\n        \"co_product_price\": \"239\",\n        \"co_product_description\": \"\",\n        \"co_product_categories\": [\n            \"make\",\n            \"make-up\",\n            \"maquiagem\",\n            \"sombras\",\n            \"feminino\",\n            \"base\"\n        ],\n        \"co_product_main_categories\": \"maquiagem\",\n        \"co_product_installments\": \"3\",\n        \"co_product_images\": [\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_3.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_2.png?width=1080&height=1080\",\n            \"https://sdcdn.io/mac/br/mac_sku_M6JC04_1x1_0.png?width=1080&height=1080\"\n        ],\n        \"co_user_id\": \"95805cfe-8bab-4e30-a7ff-42600835cc34\",\n        \"co_product_discount\": \"0\",\n        \"co_product_marc\": \"MAC\",\n        \"co_product_conditions\": \"novo\",\n        \"co_product_features\": {\n            \"title\": \"gerais\",\n            \"body\": {\n                \"marca\": \"MAC\"\n            }\n        },\n        \"co_product_seller\": \"DEFAULT\",\n        \"co_five_stars\": null,\n        \"co_four_stars\": null,\n        \"co_three_stars\": null,\n        \"co_two_stars\": null,\n        \"co_one_stars\": null,\n        \"co_zero_stars\": \"0\",\n        \"co_created_at\": \"2022-09-05T21:07:08.352Z\",\n        \"co_updated_at\": \"2022-09-05T21:07:08.352Z\",\n        \"co_product_seller_id\": \"0c5351a7-7aed-42bb-a992-40b414692929\",\n        \"co_produdct_installment_price\": \"79.66\",\n        \"co_product_id\": \"3c77a8cd-b2ca-4208-8ccb-a50465d17cbd\",\n        \"co_purchase_total\": \"478\",\n        \"co_purchase_amount\": \"2\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
