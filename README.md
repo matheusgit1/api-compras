@@ -7,7 +7,7 @@
 
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
     
-    # API-COMPRAs
+# API-COMPRAS
 
 ## Sobre este projeto
 
@@ -84,7 +84,7 @@ de sub sistemas de sua preferência
 
 
 ```bash
-  git clone https://github.com/matheusgit1/commerce-suit.git
+  git clone https://github.com/matheusgit1/api-compras.git
 ```
 
 Entre no diretório do projeto
